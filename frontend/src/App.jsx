@@ -1,22 +1,20 @@
 import "./App.css";
-import { useState } from "react";
-const URL = import.meta.env.VITE_BACKEND_URL;
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Register from "./pages/register";
+import Login from "./pages/login";
 
 function App() {
-  const [response, setResponse] = useState("");
-
-  const handleClick = async (e) => {
-    e.preventDefault();
-    const res = await fetch(URL);
-    const data = await res.json();
-    console.log(data);
-    setResponse(data.message);
-  };
-
   return (
     <>
-      <button onClick={handleClick}>Click Me</button>
-      <h1>{response}</h1>
+      {/* Creates a routing instance in React */}
+      <BrowserRouter>
+        {/* //Wrapper for each route */}
+        <Routes>
+          {/* //Individual route */}
+          <Route path="/register" element={<Register />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -1,0 +1,99 @@
+.registerContainer {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.formContainer {
+  width: 80;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1vh;
+}
+
+.subtext {
+  margin-bottom: 4vh;
+  color: #525252;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  padding: 2vh;
+  margin-bottom: 3vh;
+  border: 2px solid #c2c2c2;
+  border-radius: 0.3rem;
+}
+
+form input[type="text"]::placeholder,
+form input[type="password"]::placeholder {
+  color: black;
+}
+
+.termsConditions {
+  margin-bottom: 4vh;
+  display: flex;
+  align-items: center;
+}
+
+.termsConditions input[type="checkbox"] {
+  margin-right: 1vw;
+  accent-color: #858585;
+}
+
+.termsConditions label {
+  margin: 0;
+  font-size: 1rem;
+  color: #525252;
+}
+
+.registerButton {
+  width: 27vh;
+  height: 6vh;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  margin-bottom: 2vh;
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  background-color: #ed5353;
+  cursor: pointer;
+}
+
+.toLoginText {
+  color: #525252;
+}
+
+.toLoginLink {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.imageContainer {
+  background-image: url("../../assets/signupRegister.png");
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position: right;
+  overflow: hidden;
+}
+
+.imageContainer p {
+  color: white;
+  margin-left: 15vw;
+  margin-top: 5vh;
+  font-size: 2.5rem;
+}
