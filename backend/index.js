@@ -8,6 +8,10 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 //importing user routes
 const userRoutes = require("./routes/user");
+//importing middlewares
+const requestLogger = require("./middleware/requestLogger");
+const responseLogger = require("./middleware/responseLogger");
+const errorHandler = require("./middleware/errorHandler");
 
 //If there is no port available, assign the value 8080
 const port = process.env.PORT || 8080;
@@ -26,6 +30,10 @@ app.use(cors());
 app.use(bodyParser.json()); //Used to parse JSON request
 app.use(bodyParser.urlencoded({ extended: true })); //Used to parse form data
 
+//calling custom middlewares
+app.use(requestLogger);
+app.use(responseLogger);
+
 //endpoint for Home page
 app.get("/", (req, res) => {
   res.status(200).json({
@@ -35,6 +43,9 @@ app.get("/", (req, res) => {
 
 //Setting up user routes
 app.use("/user", userRoutes);
+
+//errorHandlers are always placed after routes
+app.use(errorHandler);
 //running server on a port
 app.listen(port, () => {
   //Lets you know when the app is running successfully
