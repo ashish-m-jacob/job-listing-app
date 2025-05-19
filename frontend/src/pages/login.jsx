@@ -16,14 +16,18 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await login(user);
-
-    console.log(res.status);
-    if (res.status === 200) {
-      alert("login successful!");
-      navigate("/home");
-    } else {
-      alert(res.data.message);
+    try {
+      const res = await login(user);
+      console.log(res.status);
+      if (res.status === 200) {
+        alert("login successful!");
+        window.localStorage.setItem("token", res.data.token);
+        navigate("/jobs");
+      } else {
+        alert(res.data.message);
+      }
+    } catch {
+      alert("Something went wrong!");
     }
   };
   return (

@@ -1,7 +1,12 @@
 //middleware to log every error that is thrown
-
+const fs = require("fs");
 const errorHandler = (err, req, res, next) => {
-  console.log(new Date().toLocaleDateString(), "error", err);
+  const file = fs.createWriteStream("./logs/error.txt", { flags: "a" });
+  file.write(new Date().toLocaleDateString() + "\n" + err + "\n\n", (err) => {
+    if (err) {
+      throw err;
+    }
+  });
 
   if (err.name === "ValidationError") {
     return res.status(400).json({

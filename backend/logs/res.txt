@@ -1,0 +1,9 @@
+18/5/2025
+{"message":"User created successfully!"}
+
+18/5/2025
+{"message":"User logged in successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmEwMDlhNTc5MTZmOTc4ZDcxMzUwOSIsImlhdCI6MTc0NzU4MzE0MywiZXhwIjoxNzQ3NjY5NTQzfQ.S_nL7kaCE_K04DrGt2AwXWB43gCWgkyd-icrXx2KRBA"}
+
+19/5/2025
+{"message":"User logged in successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjhiYWE0ODUzOGUwZTA0ZGYxMzdhMiIsImlhdCI6MTc0NzYzMDgyNCwiZXhwIjoxNzQ3NzE3MjI0fQ.5lot_rm1wCIWqfn4hFmgVYTIdjhuulmolJAlZ3ThJ2I"}
+
