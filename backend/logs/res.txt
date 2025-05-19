@@ -13,3 +13,27 @@
 19/5/2025
 {"message":"User logged in successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjhiYWE0ODUzOGUwZTA0ZGYxMzdhMiIsIm5hbWUiOiJ0ZXN0MSIsImlhdCI6MTc0NzY0NTM1NCwiZXhwIjoxNzQ3NzMxNzU0fQ.khF2J9ba4TURU25trU_PY17vFR8XcvznzGGh2vE0c-k"}
 
+19/5/2025
+{"message":"User logged in successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjhiYWE0ODUzOGUwZTA0ZGYxMzdhMiIsImlhdCI6MTc0NzY0NTUxOSwiZXhwIjoxNzQ3NzMxOTE5fQ.qi3KhamVkWmKXeEH8VSPGeQCEp9iempw3spT8ftEvzc","name":"test1"}
+
+19/5/2025
+{"message":"User logged in successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjhiYWE0ODUzOGUwZTA0ZGYxMzdhMiIsImlhdCI6MTc0NzY0NTU1MSwiZXhwIjoxNzQ3NzMxOTUxfQ.BtP0vs56hTxKs9t01D9tiovxsZAviJZuMzIMF-crtT4","name":"test1"}
+
+19/5/2025
+{"message":"User logged in successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjhiYWE0ODUzOGUwZTA0ZGYxMzdhMiIsImlhdCI6MTc0NzY0NTU4OCwiZXhwIjoxNzQ3NzMxOTg4fQ.ElaVdvqTIT7InZHqs4qT-tkl4XgtdhdrH4iAMZQRXFc","name":"test1"}
+
+19/5/2025
+{"message":"User logged in successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjhiYWE0ODUzOGUwZTA0ZGYxMzdhMiIsImlhdCI6MTc0NzY0NTcwMywiZXhwIjoxNzQ3NzMyMTAzfQ.UWWYWKN6Zs3inFp5xZAv-9K1dM06oxzlonz89EPW_rE","name":"test1"}
+
+19/5/2025
+{"message":"User already exists","errors":"ValidationError"}
+
+19/5/2025
+{"message":"User created successfully!"}
+
+19/5/2025
+{"message":"User logged in successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmFmOWM1NjMxNTZiZGFkNjc2M2ExNiIsImlhdCI6MTc0NzY0NjkzMCwiZXhwIjoxNzQ3NzMzMzMwfQ.3Y7da8pRxj2namo05G9LaHJJpVxwDhUdd9k35RmrY6s","name":"Ashish M Jacob"}
+
+19/5/2025
+{"message":"User logged in successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmFmOWM1NjMxNTZiZGFkNjc2M2ExNiIsImlhdCI6MTc0NzY0NzMzMCwiZXhwIjoxNzQ3NzMzNzMwfQ.WqjYzi30eKvw34w__JSKkL2QClVCBOISZBxjwjvKWOw","name":"Ashish M Jacob"}
+
