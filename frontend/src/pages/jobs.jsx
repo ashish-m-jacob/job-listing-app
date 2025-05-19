@@ -55,6 +55,10 @@ export default function Jobs() {
     "WordPress",
   ];
 
+  if (window.localStorage.getItem("token")) {
+    console.log(window.localStorage.getItem("token"));
+    console.log(`In jobs page ${window.localStorage.getItem("username")}`);
+  }
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
     setFilteredJobs(() =>
@@ -103,7 +107,7 @@ export default function Jobs() {
           <div className={styles.headerButtons}>
             {window.localStorage.token ? (
               <>
-                <p>User</p>
+                <p>{window.localStorage.getItem("username")}</p>
                 <button onClick={handleLogout} className={styles.skillsButton}>
                   Logout
                 </button>

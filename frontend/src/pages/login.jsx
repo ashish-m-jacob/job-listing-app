@@ -21,6 +21,7 @@ const Login = () => {
       console.log(res.status);
       if (res.status === 200) {
         alert("login successful!");
+        window.localStorage.setItem("username", res.data.name);
         window.localStorage.setItem("token", res.data.token);
         navigate("/jobs");
       } else {

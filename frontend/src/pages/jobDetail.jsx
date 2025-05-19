@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles/jobDetail.module.css";
 
 export default function JobDetail() {
   const { id } = useParams();
-
+  const navigate = useNavigate();
   // Mock data for job details
   const jobDetail = {
     id: 2,
@@ -36,10 +36,17 @@ export default function JobDetail() {
     <div className={styles.container}>
       <header className={styles.header}>
         <div className={styles.headerContent}>
-          <h1 className={styles.logo}>Jobfinder</h1>
+          <h1
+            className={styles.logo}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Jobfinder
+          </h1>
           <div className={styles.headerButtons}>
             {window.localStorage.getItem("token") ? (
-              <>User</>
+              <>{window.localStorage.getItem("username")}</>
             ) : (
               <>
                 {" "}
