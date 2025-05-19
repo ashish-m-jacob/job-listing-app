@@ -1,7 +1,9 @@
 import { useState } from "react";
 import styles from "./styles/create.module.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Create() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     companyName: "",
     logoUrl: "",
@@ -241,7 +243,13 @@ export default function Create() {
             />
           </div>
           <div className={styles.buttonGroup}>
-            <button type="button" className={styles.cancelButton}>
+            <button
+              type="button"
+              className={styles.cancelButton}
+              onClick={() => {
+                navigate("/");
+              }}
+            >
               Cancel
             </button>
             <button type="submit" className={styles.button}>
