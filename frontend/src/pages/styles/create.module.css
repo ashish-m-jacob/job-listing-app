@@ -1,5 +1,6 @@
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
   min-height: 100vh;
 }
 
@@ -13,12 +14,12 @@
 }
 
 .imageSection {
-  flex: 1;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+  background-image: url("../../assets/addJob.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  overflow: hidden;
+  background-color: black;
 }
 
 .title {
@@ -37,15 +38,14 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 1vh;
 }
 
 .formGroup {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 0.2fr 0.8fr;
   align-items: center;
-  gap: 30px;
 }
 
 .label {
@@ -55,7 +55,7 @@
 }
 
 .input {
-  padding: 15px;
+  padding: 2vh;
   border: 1px solid #c2c2c2;
   border-radius: 5px;
   font-size: 14px;
@@ -137,6 +137,8 @@
 
 .imageTitle {
   font-size: 32px;
+  color: white;
+  max-width: 100%;
   text-align: center;
-  max-width: 500px;
+  margin-top: 5vh;
 }
